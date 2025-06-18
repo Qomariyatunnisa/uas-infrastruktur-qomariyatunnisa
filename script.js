@@ -110,3 +110,17 @@ function toggleMenu() {
     alert("Anda telah logout");
     // tambahkan fungsi logout sesuai kebutuhan
   }
+
+function toggleMenu() {
+    const navRight = document.getElementById('navRight');
+    const hamburger = document.getElementById('hamburger');
+    
+    navRight.classList.toggle('show');
+
+    // Ganti ikon ☰ jadi × dan sebaliknya
+    if (hamburger.innerHTML === '☰') {
+      hamburger.innerHTML = '✖';
+    } else {
+      hamburger.innerHTML = '☰';
+    }
+  }
