@@ -68,6 +68,7 @@ header {
   align-items: center;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
+
 .nav-left {
   font-weight: bold;
   font-size: 1.2rem;
@@ -529,3 +530,50 @@ form button {
   background-color: #4f46e5; /* Warna biru saat diklik */
 }
 
+/* Responsive untuk layar kecil (misalnya HP) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-right {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .nav-menu li a {
+    width: 100%;
+  }
+
+  .logout-btn {
+    align-self: stretch;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .hero-text, .hero-image {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .hero-image img {
+    width: 200px;
+    height: 200px;
+  }
+}
