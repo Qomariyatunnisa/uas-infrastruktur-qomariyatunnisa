@@ -90,3 +90,23 @@ function toggleMenu() {
     nav.classList.toggle("show");
   }
 
+function toggleMenu() {
+    const navRight = document.getElementById("navRight");
+    const openBtn = document.getElementById("openBtn");
+    const closeBtn = document.getElementById("closeBtn");
+
+    navRight.classList.toggle("show");
+    
+    if (navRight.classList.contains("show")) {
+      openBtn.style.display = "none";
+      closeBtn.style.display = "block";
+    } else {
+      openBtn.style.display = "block";
+      closeBtn.style.display = "none";
+    }
+  }
+
+  function logout() {
+    alert("Anda telah logout");
+    // tambahkan fungsi logout sesuai kebutuhan
+  }
