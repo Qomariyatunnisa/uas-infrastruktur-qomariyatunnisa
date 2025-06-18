@@ -229,12 +229,7 @@ section {
   margin: 0 auto 10px auto;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #222;
-  color: white;
-}
+
 form input, form textarea {
   display: block;
   width: 100%;
