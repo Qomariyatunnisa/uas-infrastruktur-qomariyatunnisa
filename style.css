@@ -2,46 +2,196 @@ body {
   font-family: Times New Roman, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
+  background: #e6e6f0;
   color: black;
 }
 header {
-  background-color: #666; /* abu-abu */
+  background-color: grey; /* abu-abu */
   color: white;
   padding: 2rem;
   text-align: center;
 }
+#materi {
+  background-color: #e6e6f0;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+/* Layout dua kolom untuk header */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e6e6f0;
+  color: #333;
+  padding: 1rem 2rem 2rem 2rem;
+}
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.hero-text {
+  flex: 1 1 50%;
+  max-width: 600px;
+  padding-left: 0;         /* hilangkan padding default */
+  padding-right: 2rem;     /* beri jarak dari gambar */
+  margin-left: 0;          /* jangan pakai margin negatif */
+}
+
+.hero-image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+.hero-image img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
 /* Navigasi */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.nav-left {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #6c63ff;
+}
+
+/* Kanan: grup menu + logout */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.nav-menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
+
+.nav-menu li {
+  margin: 0;
+}
+.nav-menu li a {
+  text-decoration: none;
+  color: #6c63ff;
+  font-weight: 500;
+  padding: 12px 8px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.nav-menu li a:hover {
+  background-color: #6c63ff;
+  color: white;
+}
+.nav-menu li a:active {
+  background-color: #6c63ff;
+  color: white;
+  box-shadow: 0 2px 6px rgba(108, 99, 255, 0.3);
+}
+
+/* Saat aktif (misalnya sedang di bagian itu) */
+.nav-menu li a.active {
+  background-color: #6c63ff;
+  color: white;
+}
+.logout-btn {
+  background-color: #6c63ff;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-menu a {
+  display: inline-block;
+  padding: 6px 12px; /* kecilkan padding */
+  font-size: 0.9rem;
+  border: 2px solid #6c63ff;
+  border-radius: 6px;
+  background-color: white;
+  color: #6c63ff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-menu a:hover {
+  background-color: #6c63ff;
+  color: white;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
   margin-top: 1rem;
+}
+nav ul.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  list-style: none;
 }
 nav li {
   display: inline;
   margin: 0 10px;
 }
 nav a {
-  color: darkred;
+  color: #6c63ff;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: white; /* berubah jadi putih saat hover */
+  color: #000; /* saat hover, jadi hitam agar kontras */
 }
+
+/* Tombol */
 .cta {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.5rem 1rem;
-  background: #ffcc00;
-  color: black;
+  background: #6c63ff;
+  color: white;
   font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+
 }
 section {
   padding: 2rem;
 }
+#tentang {
+  padding: 3rem 2rem;
+  color: #333;
+}
+
 .tentang-container {
   display: flex;
   flex-wrap: wrap;
@@ -52,7 +202,7 @@ section {
 
 .tentang-box {
   background-color: white;
-  border-left: 4px solid #007acc;
+  border-left: 4px solid #6c63ff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   padding: 1rem;
   width: 250px;
@@ -69,6 +219,13 @@ section {
 .tentang-box.visible {
   opacity: 1;
   transform: translateY(0);
+}
+.tentang-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 10px auto;
 }
 
 footer {
@@ -100,4 +257,260 @@ form button {
   width: 100%;
   height: 100px;
 }
+/* Bagian Materi */
+#materi {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
 
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.materi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.materi-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.materi-card:hover {
+  transform: translateY(-5px);
+}
+
+.materi-thumb {
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Gambar materi per kategori */
+.materi-thumb.python { background-image: url('images/python-thumb.jpg'); }
+.materi-thumb.cpp { background-image: url('images/cpp-thumb.jpg'); }
+.materi-thumb.jaringan { background-image: url('images/jaringan-thumb.jpg'); }
+.materi-thumb.os { background-image: url('images/os-thumb.jpg'); }
+.materi-thumb.cyber { background-image: url('images/cyber-thumb.jpg'); }
+.materi-thumb.ai { background-image: url('images/ai-thumb.jpg'); }
+
+.materi-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 8px 16px;
+  background-color: #6c63ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.materi-button:hover {
+  background-color: #584fe0;
+}
+
+.materi-content {
+  display: none;
+  text-align: left;
+  margin-top: 1rem;
+  background-color: #f1f1ff;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.materi-content ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.materi-content li {
+  margin-bottom: 0.5rem;
+}
+
+
+/* Kursus Online Accordion */
+.accordion {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.accordion-button {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  font-weight: bold;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion-button .arrow {
+  transition: transform 0.3s ease;
+  font-size: 1.2rem;
+}
+
+/* Tambahkan class .active untuk memutar panah */
+.accordion-button.active .arrow {
+  transform: rotate(90deg); /* ▶ jadi ▼ */
+}
+
+
+.accordion-button:hover {
+  background-color: #574fd1;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background-color: #f9f9f9;
+  padding: 0 1rem;
+}
+
+.accordion-content p {
+  margin: 1rem 0 0.5rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.accordion-content iframe {
+  width: 100%;
+  height: 315px;
+  margin-bottom: 1rem;
+  border: none;
+}
+.blog-section {
+  padding: 60px 20px;
+  background: #e6e6f0;
+  text-align: center;
+}
+
+.blog-section .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.section-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.blog-card {
+  display: block;
+  text-align: left;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  padding: 24px;
+  margin-bottom: 32px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+  color: inherit;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+
+.blog-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 12px 0 10px;
+  color: #333;
+}
+
+.blog-description {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.author-name {
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+.blog-meta {
+  font-size: 0.85rem;
+  color: #888;
+  margin: 2px 0 0;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: white;
+  background: #6c63ff;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.tag.tutorial {
+  background: #28a745;
+}
+
+.tag.teknologi {
+  background: #007bff;
+}
+
+.tag.basisdata {
+  background: #6f42c1;
+}
