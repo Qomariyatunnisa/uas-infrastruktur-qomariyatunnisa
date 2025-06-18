@@ -30,17 +30,16 @@ header {
 }
 .hero-content {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
+  justify-content: center;
+  text-align: center;
 }
 .hero-text {
-  flex: 1 1 50%;
-  max-width: 600px;
-  padding-left: 0;         /* hilangkan padding default */
-  padding-right: 2rem;     /* beri jarak dari gambar */
-  margin-left: 0;          /* jangan pakai margin negatif */
+  flex: 1 1 100%;
+  max-width: 100px;
+  text-align: center;
+  padding: 0 1rem;    
 }
 
 .hero-image {
@@ -177,13 +176,13 @@ nav a:hover {
 .cta {
   display: inline-block;
   margin-top: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
   background: #6c63ff;
   color: white;
   font-weight: bold;
   border-radius: 5px;
   text-decoration: none;
-
+  font-size: 1rem;
 }
 section {
   padding: 2rem;
