@@ -114,13 +114,7 @@ function toggleMenu() {
 function toggleMenu() {
     const navRight = document.getElementById('navRight');
     const hamburger = document.getElementById('hamburger');
-    
-    navRight.classList.toggle('show');
 
-    // Ganti ikon ☰ jadi × dan sebaliknya
-    if (hamburger.innerHTML === '☰') {
-      hamburger.innerHTML = '✖';
-    } else {
-      hamburger.innerHTML = '☰';
-    }
-  }
+    navRight.classList.toggle('show');
+    hamburger.textContent = hamburger.textContent === '☰' ? '✖' : '☰';
+  }
