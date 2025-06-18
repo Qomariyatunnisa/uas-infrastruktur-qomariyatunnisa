@@ -30,16 +30,17 @@ header {
 }
 .hero-content {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: space-beetween;
+  gap: 2rem;
 }
 .hero-text {
-  flex: 1 1 100%;
-  max-width: 100px;
-  text-align: center;
-  padding: 0 1rem;    
+  flex: 1 1 50%;
+  max-width: 600px;
+  padding-left: 0;
+  padding-right: 2rem;
+  margin-left: 0;
 }
 
 .hero-image {
@@ -176,13 +177,12 @@ nav a:hover {
 .cta {
   display: inline-block;
   margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1rem;
   background: #6c63ff;
   color: white;
   font-weight: bold;
   border-radius: 5px;
   text-decoration: none;
-  font-size: 1rem;
 }
 section {
   padding: 2rem;
@@ -661,5 +661,23 @@ form button {
     font-weight: bold;
     color: white;
     text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text {
+    padding: 0 1rem;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .cta {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
