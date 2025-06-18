@@ -118,3 +118,16 @@ function toggleMenu() {
     navRight.classList.toggle('show');
     hamburger.textContent = hamburger.textContent === '☰' ? '✖' : '☰';
   }
+function toggleMenu() {
+  const navRight = document.getElementById("navRight");
+  const hamburger = document.querySelector(".hamburger");
+
+  navRight.classList.toggle("show");
+
+  // Ubah ikon dari ☰ ke ✖ saat menu dibuka
+  if (navRight.classList.contains("show")) {
+    hamburger.innerHTML = "✖";
+  } else {
+    hamburger.innerHTML = "☰";
+  }
+}
