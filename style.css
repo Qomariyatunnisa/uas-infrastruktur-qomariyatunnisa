@@ -529,22 +529,54 @@ form button {
 .formulir button:active {
   background-color: #4f46e5; /* Warna biru saat diklik */
 }
-/* Tampilkan hamburger di layar kecil */
+
+/* Hamburger Menu untuk HP */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #6c63ff;
+}
+
+/* Responsif di layar kecil */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
   }
 
   .nav-right {
     display: none;
     flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
     width: 100%;
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 999;
   }
 
-  .nav-right.active {
+  .nav-right.show {
     display: flex;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .nav-menu li a {
+    width: 100%;
+    display: block;
+    padding: 10px;
+  }
+
+  .logout-btn {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
   }
 }
