@@ -86,7 +86,7 @@ document.getElementById('kontakForm').addEventListener('submit', function(e) {
   });
 
 function toggleMenu() {
-    const navRight = document.querySelector('.nav-right');
-    navRight.classList.toggle('active');
-  }
+    const nav = document.getElementById("navRight");
+    nav.classList.toggle("show");
+  }
 
