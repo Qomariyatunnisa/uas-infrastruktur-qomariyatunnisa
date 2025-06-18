@@ -19,7 +19,52 @@ function animateTentangBoxes() {
 document.querySelectorAll('a[href="#tentang"]').forEach(link => {
   link.addEventListener('click', () => {
     setTimeout(() => {
-      animateTentangBoxes();
-    }, 700); // kasih waktu scroll smooth dulu
+      document.querySelectorAll('.tentang-box').forEach((box, index) => {
+        setTimeout(() => {
+          box.classList.add('visible');
+        }, index * 300);
+      });
+    }, 600); // beri waktu scroll smooth
   });
 });
+
+
+
+
+document.querySelectorAll('.accordion-button').forEach(button => {
+  button.addEventListener('click', () => {
+    const content = button.nextElementSibling;
+    const allContents = document.querySelectorAll('.accordion-content');
+    const allButtons = document.querySelectorAll('.accordion-button');
+
+    allContents.forEach(other => {
+      if (other !== content) other.style.maxHeight = null;
+    });
+    allButtons.forEach(btn => {
+      if (btn !== button) btn.classList.remove('active');
+    });
+
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      button.classList.remove('active');
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+      button.classList.add('active');
+    }
+  });
+});
+
+
+  function toggleMateri(button) {
+    const content = button.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+      button.innerText = "Pelajari ➜";
+    } else {
+      content.style.display = "block";
+      button.innerText = "Tutup ✖";
+    }
+  }
+
+
+
