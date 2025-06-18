@@ -688,7 +688,27 @@ form button {
     margin-right: auto;
   }
 }
+/* Mencegah semua elemen menyebabkan overflow horizontal */
+* {
+  box-sizing: border-box;
+}
 
+body {
+  overflow-x: hidden;
+}
+
+/* Kalau ada konten seperti gambar/tabel yang panjang, buat auto-wrap */
+img, table, pre, code {
+  max-width: 100%;
+  overflow-x: auto;
+  display: block;
+}
+
+/* Untuk teks panjang atau kata tidak bisa dipotong */
+p, h1, h2, h3, h4, h5, h6 {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
 footer {
   width: 100vw; /* full lebar layar */
   background-color: #ffffff; /* putih */
