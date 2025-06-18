@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Daftar Akun</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Daftar Akun Baru</h2>
+    <form id="signupForm">
+      <label for="newUsername">Username:</label>
+      <input type="text" id="newUsername" required>
+
+      <label for="newPassword">Password:</label>
+      <input type="password" id="newPassword" required>
+
+      <button type="submit">Sign Up</button>
+      <p>Sudah punya akun? <a href="index.html">Login sekarang</a></p>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("signupForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const newUsername = document.getElementById("newUsername").value;
+      const newPassword = document.getElementById("newPassword").value;
+
+      localStorage.setItem("username", newUsername);
+      localStorage.setItem("password", newPassword);
+      alert("Akun berhasil dibuat! Silakan login.");
+
+      window.location.href = "index.html"; // kembali ke halaman login
+    });
+  </script>
+</body>
+</html>
