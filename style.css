@@ -689,3 +689,11 @@ form button {
   }
 }
 
+footer {
+  width: 100vw; /* full lebar layar */
+  background-color: #ffffff; /* putih */
+  color: #6c63ff; /* warna biru sama seperti tombol Kirim */
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+}
