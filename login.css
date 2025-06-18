@@ -37,7 +37,7 @@ form input[type="password"] {
   width: 100%;
   padding: 10px;
   border-radius: 8px;
-  border: 1px solid #d1d5db;
+  border: 1px solid #4f46e5;
   outline: none;
   font-size: 14px;
   box-sizing: border-box;
@@ -50,7 +50,7 @@ form input[type="checkbox"] {
 button[type="submit"] {
   width: 100%;
   padding: 12px;
-  background-color: #6366F1; /* warna ungu dari website kamu */
+  background-color: #e6e6f0; 
   color: white;
   border: none;
   border-radius: 8px;
