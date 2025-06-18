@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+
+      <label><input type="checkbox" id="showPassword"> Lihat Password</label>
+
+      <button type="submit">Login</button>
+      <p>Belum punya akun? <a href="signup.html">Daftar di sini</a></p>
+    </form>
+  </div>
+
+  <script>
+    const defaultUsername = "nisa";
+    const defaultPassword = "nisa0603";
+
+    document.getElementById("showPassword").addEventListener("change", function () {
+      const pw = document.getElementById("password");
+      pw.type = this.checked ? "text" : "password";
+    });
+
+    document.getElementById("loginForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+
+      const savedUser = localStorage.getItem("username");
+      const savedPass = localStorage.getItem("password");
+
+      const isDefault = user === defaultUsername && pass === defaultPassword;
+      const isRegistered = user === savedUser && pass === savedPass;
+
+      if (isDefault || isRegistered) {
+        localStorage.setItem("loggedIn", "true");
+        alert("Login berhasil!");
+        window.location.href = "index.html";
+      } else {
+        alert("Username atau password salah.");
+      }
+    });
+  </script>
+</body>
+</html>
