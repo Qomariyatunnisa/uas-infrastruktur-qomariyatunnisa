@@ -693,7 +693,7 @@ form button {
   box-sizing: border-box;
 }
 
-body {
+html, body {
   overflow-x: hidden;
 }
 
@@ -704,10 +704,10 @@ img, table, pre, code {
   display: block;
 }
 
-/* Untuk teks panjang atau kata tidak bisa dipotong */
-p, h1, h2, h3, h4, h5, h6 {
-  word-break: break-word;
-  overflow-wrap: break-word;
+.container{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
 }
 footer {
   width: 100vw; /* full lebar layar */
