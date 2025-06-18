@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pendidikan Ilmu Komputer</title>
+  <script>
+  if (localStorage.getItem("loggedIn") !== "true") {
+    alert("Silakan login terlebih dahulu.");
+    window.location.href = "index.html"; 
+  }
+</script>
+
   <link rel="stylesheet" href="style.css">
 
   <!-- Boxicons CDN -->
@@ -25,6 +32,7 @@
       <a href="#" class="logout-btn">Logout</a>
       </div>
     </nav>
+    <section id="beranda">
 <header class="hero">
   <div class="hero-image">
     <img src="images/undraw_programmer_raqr.png" alt="Ilustrasi Mahasiswa Belajar">
@@ -35,7 +43,7 @@
     <a class="cta" href="#materi">Mulai Belajar Sekarang</a>
   </div>
 </header>
-
+</section>
 
   <div class="wave-separator">
   <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
@@ -384,14 +392,15 @@ if umur >= 18:
 
 
     <div class="accordion-item">
-      <button class="accordion-button">Kecerdasan Buatan
-      <span class="arrow">&#9654;</span> <!-- panah ▶ -->
-      </button>
-      <div class="accordion-content">
-        <p>Kenali konsep AI, machine learning, neural network, dan aplikasinya dalam kehidupan nyata.</p>
-        <iframe src="https://www.youtube.com/embed/2ePf9rue1Ao" title="Artificial Intelligence" allowfullscreen></iframe>
-      </div>
-    </div>
+  <button class="accordion-button">Kecerdasan Buatan
+    <span class="arrow">&#9654;</span> <!-- panah ▶ -->
+  </button>
+  <div class="accordion-content">
+    <p>Kenali konsep AI, machine learning, neural network, dan aplikasinya dalam kehidupan nyata.</p>
+    <iframe src="https://www.youtube.com/embed/gVJw96067pw" title="Artificial Intelligence" allowfullscreen></iframe>
+  </div>
+</div>
+
 
   </div>
 </section>
@@ -517,5 +526,8 @@ if umur >= 18:
   <footer>
     <p>&copy; 2025 Qomariyatun Nisa Khoiriyah. Pendidikan Ilmu Komputer</p>
   </footer>
+   
+  <script src="script.js"></script>
+
 </body>
 </html>
