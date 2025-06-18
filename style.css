@@ -607,6 +607,7 @@ form button {
     border: none;
     cursor: pointer;
     color: #6c63ff;
+    transform: translateY(-4px);
   }
 
   .hamburger.close {
