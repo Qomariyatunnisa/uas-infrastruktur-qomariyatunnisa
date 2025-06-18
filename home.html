@@ -504,14 +504,11 @@ if umur >= 18:
     <i class='bx bxl-youtube'></i>
   </a>
 </div>
-    <form>
-      <label>Nama:</label>
-      <input type="text" required>
-      <label>Email:</label>
-      <input type="email" required>
-      <label>Pesan:</label>
-      <textarea required></textarea>
-      <button type="submit">Kirim</button>
+    <form id="kontakForm" class="formulir">
+  <input type="text" id="nama" placeholder="Nama Lengkap" required>
+  <input type="email" id="email" placeholder="Email" required>
+  <textarea id="pesan" placeholder="Pesan Kamu..." required></textarea>
+  <button type="submit" id="kirimBtn">Kirim</button>
     </form>
   </section>
 
