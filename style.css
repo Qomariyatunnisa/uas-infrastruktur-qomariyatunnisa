@@ -529,51 +529,22 @@ form button {
 .formulir button:active {
   background-color: #4f46e5; /* Warna biru saat diklik */
 }
-
-/* Responsive untuk layar kecil (misalnya HP) */
+/* Tampilkan hamburger di layar kecil */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
 
   .nav-right {
+    display: none;
     flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    gap: 0.5rem;
-  }
-
-  .nav-menu li a {
     width: 100%;
   }
 
-  .logout-btn {
-    align-self: stretch;
-    width: 100%;
-    text-align: center;
-  }
-
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 2rem 1rem;
-  }
-
-  .hero-text, .hero-image {
-    max-width: 100%;
-    padding: 0;
-  }
-
-  .hero-image img {
-    width: 200px;
-    height: 200px;
+  .nav-right.active {
+    display: flex;
   }
 }
