@@ -66,5 +66,22 @@ document.querySelectorAll('.accordion-button').forEach(button => {
     }
   }
 
+document.getElementById('kontakForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // mencegah reload halaman
 
+    // Simulasi pengiriman
+    alert("Pesan kamu sudah dikirim. Terima kasih!");
+
+    // Reset input
+    document.getElementById('nama').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('pesan').value = '';
+
+    // (Opsional) Ubah teks tombol jadi 'Terkirim'
+    const tombol = document.getElementById('kirimBtn');
+    tombol.textContent = "Terkirim";
+    setTimeout(() => {
+      tombol.textContent = "Kirim";
+    }, 3000);
+  });
 
