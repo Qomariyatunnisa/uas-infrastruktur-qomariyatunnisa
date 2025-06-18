@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendidikan Ilmu Komputer</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Boxicons CDN -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  
+    <nav class="navbar">
+      <div class="nav-left">Pendidikan Ilmu Komputer</div>
+      <div class="nav-right">
+      <ul class="nav-menu">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#tentang">Tentang Kami</a></li>
+        <li><a href="#materi">Materi Pembelajaran</a></li>
+        <li><a href="#kursus">Kursus Online</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+      <a href="#" class="logout-btn">Logout</a>
+      </div>
+    </nav>
+<header class="hero">
+  <div class="hero-image">
+    <img src="images/undraw_programmer_raqr.png" alt="Ilustrasi Mahasiswa Belajar">
+  </div>
+  <div class="hero-text">
+    <h1>Pendidikan Ilmu Komputer</h1>
+    <p>Platform belajar online untuk memahami dunia teknologi dan informatika.</p>
+    <a class="cta" href="#materi">Mulai Belajar Sekarang</a>
+  </div>
+</header>
+
+
+  <div class="wave-separator">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+  <path d="M0,100 L720,0 L1440,100 L1440,0 L0,0 Z" fill="white"></path>
+</svg>
+</div>
+
+
+  <section id="tentang">
+  <h2>Tentang Kami</h2>
+  <div class="tentang-container">
+    <div class="tentang-box fade-in visible" style="transition-delay: 0s;">
+      <img src="images/visi.png" alt="Visi" class="tentang-img">
+      <h3>Visi</h3>
+      <p>Meningkatkan literasi digital generasi muda Indonesia melalui pembelajaran TI yang mudah diakses.</p>
+    </div>
+    <div class="tentang-box fade-in visible" style="transition-delay: 0.2s;">
+      <img src="images/misi.png" alt="Misi" class="tentang-img">
+      <h3>Misi</h3>
+      <p>Menyediakan materi pembelajaran yang relevan, praktis, dan gratis bagi pelajar dan masyarakat umum.</p>
+    </div>
+    <div class="tentang-box fade-in visible" style="transition-delay: 0.4s;">
+      <img src="images/pengembang.png" alt="Pengembang" class="tentang-img">
+      <h3>Pengembang</h3>
+      <p>Website ini dikembangkan oleh Qomariyatun Nisa Khoiriyah, mahasiswa Teknologi Informasi.</p>
+    </div>
+    <div class="tentang-box fade-in visible" style="transition-delay: 0.6s;">
+      <img src="images/tujuan.png" alt="Tujuan" class="tentang-img">
+      <h3>Tujuan</h3>
+      <p>Menjadi platform pembelajaran yang ramah pemula dalam bidang komputer dan teknologi informasi.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Gelombang separator -->
+<div class="wave-separator">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path d="M0,40 C480,140 960,0 1440,80 L1440,0 L0,0 Z" fill="white"></path>
+  </svg>
+</div>
+
+
+  <section id="materi">
+  <h2 class="section-title">Materi Pembelajaran</h2>
+  <p class="section-subtitle">Pelajari berbagai topik ilmu komputer dari dasar hingga lanjutan.</p>
+
+  <div class="materi-card">
+  <div class="materi-thumb python"></div>
+  <h3>Python Dasar</h3>
+  <p>Belajar sintaks, variabel, logika, dan struktur data dasar Python.</p>
+  <button class="materi-button" onclick="toggleMateri(this)">Pelajari ➜</button>
+  <div class="materi-content">
+    <p>
+    Python adalah bahasa pemrograman yang sangat populer dan mudah dipelajari, cocok untuk pemula karena sintaksnya sederhana dan menyerupai bahasa manusia. Python digunakan di berbagai bidang seperti web, data science, AI, dan otomasi.
+  </p>
+  <p>
+    Materi dasar yang perlu dipahami meliputi:
+  </p>
+  <ul>
+    <li><strong>Variabel &amp; Tipe Data</strong>: <code>str</code> (teks), <code>int</code> (bilangan bulat), <code>float</code> (desimal), <code>bool</code> (True/False).</li>
+    <li><strong>Operator</strong>: Aritmatika (<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>), perbandingan (<code>==</code>, <code>!=</code>), dan logika (<code>and</code>, <code>or</code>).</li>
+    <li><strong>Kontrol Alur</strong>: Gunakan <code>if</code>, <code>elif</code>, <code>else</code> untuk pengambilan keputusan; <code>for</code> dan <code>while</code> untuk perulangan.</li>
+    <li><strong>Fungsi</strong>: Dibuat dengan <code>def</code> untuk mengelompokkan kode yang bisa dipakai ulang.</li>
+    <li><strong>Struktur Data</strong>: Gunakan <code>list</code>, <code>tuple</code>, <code>set</code>, dan <code>dictionary</code> untuk menyimpan kumpulan data.</li>
+  </ul>
+  <p>Contoh kode sederhana:</p>
+  <pre><code class="language-python">nama = "Nisa"
+umur = 18
+
+if umur >= 18:
+    print("Halo", nama, "- kamu sudah cukup umur.")</code></pre>
+  <p>
+    Dengan memahami dasar-dasar ini, kamu bisa mulai membangun program kecil seperti kalkulator, aplikasi input-data, hingga automasi sederhana.
+  </p>
+  </div>
+</div>
+
+
+    <div class="materi-card">
+      <div class="materi-thumb cpp"></div>
+      <h3>Dasar C++</h3>
+      <p>Pemahaman dasar C++, kontrol alur, fungsi, dan OOP.</p>
+      <button class="materi-button" onclick="toggleMateri(this)">Pelajari ➜</button>
+      <div class="materi-content">
+        <p>
+          C++ adalah bahasa pemrograman tingkat menengah yang digunakan secara luas dalam pengembangan sistem, game, dan aplikasi performa tinggi. C++ bersifat <em>compiled</em>, artinya kode harus dikompilasi sebelum dijalankan, dan mendukung paradigma prosedural serta berorientasi objek (OOP).
+        </p>
+        <p>
+          Materi dasar yang dipelajari antara lain:
+        </p>
+        <ul>
+          <li><strong>Struktur Program C++</strong>: Program dimulai dari fungsi <code>main()</code>.</li>
+          <li><strong>Variabel &amp; Tipe Data</strong>: <code>int</code>, <code>float</code>, <code>char</code>, <code>string</code>, <code>bool</code>.</li>
+          <li><strong>Operator</strong>: Aritmatika (<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>), logika (<code>&&</code>, <code>||</code>), dan perbandingan (<code>==</code>, <code>!=</code>).</li>
+          <li><strong>Kontrol Alur</strong>: Percabangan dengan <code>if</code>, <code>else</code>, <code>switch</code>; perulangan dengan <code>for</code>, <code>while</code>, dan <code>do-while</code>.</li>
+          <li><strong>Fungsi</strong>: Blok kode modular untuk efisiensi.</li>
+          <li><strong>Array &amp; String</strong>: Struktur data dasar untuk menyimpan kumpulan data.</li>
+        </ul>
+        <p>Contoh kode sederhana:</p>
+        <pre><code class="language-cpp">#include &lt;iostream&gt;
+          using namespace std;
+
+          int main() {
+              cout &lt;&lt; "Halo, dunia!";
+              return 0;
+          }
+  </code></pre>
+  <p>
+    Dengan memahami dasar-dasar ini, kamu bisa melangkah ke tahap berikutnya seperti pemrograman berorientasi objek, manajemen memori, dan pemrograman sistem.
+  </p>
+      </div>
+    </div>
+
+
+    <div class="materi-card">
+      <div class="materi-thumb jaringan"></div>
+      <h3>Jaringan Komputer</h3>
+      <p>Kenali cara kerja internet, protokol, dan struktur jaringan.</p>
+      <button class="materi-button" onclick="toggleMateri(this)">Pelajari ➜</button>
+      <div class="materi-content">
+        <p>
+    Jaringan komputer adalah sistem yang terdiri dari dua atau lebih perangkat komputer yang saling terhubung untuk berbagi data, informasi, dan sumber daya. Tujuan utama dari jaringan adalah untuk meningkatkan efisiensi komunikasi dan kolaborasi antar perangkat.
+  </p>
+  <p>
+    Jaringan komputer dibedakan berdasarkan luas wilayahnya:
+  </p>
+  <ul>
+    <li><strong>LAN (Local Area Network)</strong>: Jaringan lokal di area kecil seperti rumah atau kantor.</li>
+    <li><strong>MAN (Metropolitan Area Network)</strong>: Mencakup area yang lebih luas seperti satu kota.</li>
+    <li><strong>WAN (Wide Area Network)</strong>: Jaringan skala besar yang mencakup berbagai negara atau benua, contohnya internet.</li>
+  </ul>
+  <p>
+    Komponen utama jaringan meliputi:
+  </p>
+  <ul>
+    <li><strong>Host</strong>: Komputer atau perangkat yang terhubung ke jaringan.</li>
+    <li><strong>Router</strong>: Mengarahkan data antar jaringan.</li>
+    <li><strong>Switch</strong>: Menghubungkan beberapa perangkat dalam jaringan lokal.</li>
+    <li><strong>Media Transmisi</strong>: Kabel (UTP, fiber optic) atau nirkabel (Wi-Fi).</li>
+  </ul>
+  <p>
+    Protokol komunikasi yang umum digunakan dalam jaringan adalah TCP/IP, yang memungkinkan komunikasi data secara standar di seluruh dunia.
+  </p>
+  <p>
+    Jaringan juga dapat diklasifikasikan berdasarkan topologi, seperti <em>bus</em>, <em>star</em>, <em>ring</em>, dan <em>mesh</em>, yang menggambarkan bentuk koneksi antar perangkat.
+  </p>
+  <p>
+    Dengan pemahaman jaringan komputer, kita dapat membangun sistem komunikasi yang efektif, aman, dan mendukung berbagai aktivitas teknologi informasi.
+  </p>
+      </div>
+    </div>
+
+    <div class="materi-card">
+      <div class="materi-thumb os"></div>
+      <h3>Sistem Operasi</h3>
+      <p>Pelajari manajemen proses, memori, dan file dalam OS.</p>
+      <button class="materi-button" onclick="toggleMateri(this)">Pelajari ➜</button>
+      <div class="materi-content">
+        <p>
+    Sistem Operasi (OS) adalah perangkat lunak utama yang mengatur seluruh aktivitas komputer. Tiga fungsi penting dari OS adalah manajemen proses, manajemen memori, dan manajemen file.
+  </p>
+
+  <h3>1. Manajemen Proses</h3>
+  <p>
+    Proses adalah program yang sedang dieksekusi. OS bertanggung jawab mengatur pembuatan, penjadwalan, dan penghentian proses. Setiap proses memiliki status (ready, running, waiting) dan diatur melalui CPU scheduler agar semua proses berjalan efisien tanpa konflik.
+  </p>
+
+  <h3>2. Manajemen Memori</h3>
+  <p>
+    OS mengatur penggunaan RAM oleh berbagai proses. Tugasnya meliputi alokasi memori ke proses, pelacakan penggunaan memori, dan menghindari konflik antar proses. Teknik seperti paging dan segmentasi digunakan untuk efisiensi dan perlindungan memori.
+  </p>
+
+  <h3>3. Manajemen File</h3>
+  <p>
+    OS juga mengatur penyimpanan dan akses file di sistem. Ini mencakup pembuatan, pembacaan, penulisan, penghapusan file, serta pengaturan direktori dan hak akses. Struktur file system membantu OS dalam menyimpan data secara teratur dan aman.
+  </p>
+
+  <p>
+    Ketiga manajemen ini bekerja sama agar komputer dapat menjalankan berbagai aplikasi secara lancar, aman, dan efisien. Tanpa sistem manajemen yang baik, sumber daya komputer bisa saling tumpang tindih dan menyebabkan kerusakan data atau crash sistem.
+  </p>
+      </div>
+    </div>
+
+    <div class="materi-card">
+      <div class="materi-thumb cyber"></div>
+      <h3>Keamanan Siber</h3>
+      <p>Pahami enkripsi, firewall, serangan siber dan perlindungannya.</p>
+      <button class="materi-button" onclick="toggleMateri(this)">Pelajari ➜</button>
+      <div class="materi-content">
+        <p>
+    Keamanan siber adalah upaya untuk melindungi sistem komputer, jaringan, dan data dari ancaman digital. Dalam dunia digital yang terus berkembang, penting memahami konsep dasar seperti enkripsi, firewall, serta jenis serangan dan cara mengatasinya.
+  </p>
+
+  <h3>1. Enkripsi</h3>
+  <p>
+    Enkripsi adalah proses mengubah data menjadi kode rahasia untuk menjaga kerahasiaannya. Hanya pihak yang memiliki kunci tertentu yang bisa membuka data tersebut. Contohnya, HTTPS menggunakan enkripsi agar data pengguna aman saat ditransmisikan melalui internet.
+  </p>
+
+  <h3>2. Firewall</h3>
+  <p>
+    Firewall adalah sistem yang mengontrol lalu lintas data masuk dan keluar dari jaringan berdasarkan aturan keamanan. Firewall dapat berupa perangkat keras atau perangkat lunak, berfungsi sebagai penghalang antara jaringan internal yang aman dan jaringan luar yang tidak terpercaya.
+  </p>
+
+  <h3>3. Serangan Siber</h3>
+  <p>
+    Serangan siber mencakup berbagai upaya untuk membobol sistem seperti <em>phishing</em>, <em>malware</em>, <em>DDoS</em>, dan <em>ransomware</em>. Tujuan serangan bisa berupa pencurian data, gangguan sistem, hingga pemerasan.
+  </p>
+
+  <h3>4. Perlindungan</h3>
+  <p>
+    Untuk melindungi sistem dari serangan, diperlukan kombinasi antara perangkat lunak antivirus, pembaruan sistem berkala, firewall, penggunaan kata sandi yang kuat, dan edukasi pengguna. Keamanan juga diperkuat dengan otentikasi dua faktor (2FA) dan backup data rutin.
+  </p>
+
+  <p>
+    Memahami dan menerapkan prinsip keamanan siber sangat penting agar data dan sistem tetap aman dari ancaman digital yang terus berkembang.
+  </p>
+      </div>
+    </div>
+
+    <div class="materi-card">
+      <div class="materi-thumb ai"></div>
+      <h3>Kecerdasan Buatan</h3>
+      <p>Dasar machine learning, neural network, dan penerapannya.</p>
+      <button class="materi-button" onclick="toggleMateri(this)">Pelajari ➜</button>
+      <div class="materi-content">
+        <p>
+    Kecerdasan Buatan (Artificial Intelligence/AI) adalah bidang ilmu komputer yang berfokus pada pembuatan sistem yang dapat meniru kecerdasan manusia. Dua konsep penting dalam AI adalah <strong>machine learning</strong> dan <strong>neural network</strong>.
+  </p>
+
+  <h3>1. Machine Learning (ML)</h3>
+  <p>
+    Machine Learning adalah metode di mana komputer belajar dari data untuk membuat keputusan atau prediksi tanpa diprogram secara eksplisit. Terdapat tiga jenis utama ML:
+  </p>
+  <ul>
+    <li><strong>Supervised Learning</strong>: Model dilatih dengan data berlabel.</li>
+    <li><strong>Unsupervised Learning</strong>: Model menemukan pola dari data yang tidak berlabel.</li>
+    <li><strong>Reinforcement Learning</strong>: Model belajar melalui trial and error berdasarkan umpan balik (reward).</li>
+  </ul>
+
+  <h3>2. Neural Network</h3>
+  <p>
+    Neural Network adalah model AI yang terinspirasi dari cara kerja otak manusia. Terdiri dari lapisan neuron buatan (input, hidden, dan output layer) yang saling terhubung dan mampu mengenali pola kompleks, seperti pengenalan wajah atau suara.
+  </p>
+
+  <h3>3. Penerapan AI</h3>
+  <p>
+    AI dan machine learning digunakan dalam berbagai bidang, seperti:
+  </p>
+  <ul>
+    <li><strong>Otomatisasi</strong>: Robot cerdas di industri dan gudang.</li>
+    <li><strong>Asisten Virtual</strong>: Contoh seperti Siri, Google Assistant, dan ChatGPT.</li>
+    <li><strong>Pengenalan Wajah</strong>: Digunakan dalam keamanan dan media sosial.</li>
+    <li><strong>Rekomendasi Produk</strong>: Di e-commerce seperti Tokopedia atau Netflix.</li>
+    <li><strong>Kesehatan</strong>: Deteksi penyakit melalui citra medis menggunakan AI.</li>
+  </ul>
+
+  <p>
+    Dengan memahami dasar AI dan penerapannya, kita dapat memanfaatkan teknologi ini untuk menciptakan solusi inovatif di berbagai bidang kehidupan.
+  </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gelombang separator -->
+<div class="wave-separator">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+  <path d="M0,40 C480,140 960,0 1440,80 L1440,0 L0,0 Z" fill="white"></path>
+  </svg>
+</div>
+
+
+  <section id="kursus">
+  <h2><center>Kursus Online</center></h2>
+  <div class="accordion">
+
+    <div class="accordion-item">
+      <button class="accordion-button">Pemrograman Dasar: Python
+      <span class="arrow">&#9654;</span> <!-- panah ▶ -->
+      </button>
+      <div class="accordion-content">
+        <p>Belajar dasar-dasar Python seperti variabel, tipe data, perulangan, fungsi, dan struktur logika.</p>
+        <iframe src="https://www.youtube.com/embed/rfscVS0vtbw" title="Python Tutorial" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-button">Pemrograman Dasar: C++
+      <span class="arrow">&#9654;</span> <!-- panah ▶ -->
+      </button>
+      <div class="accordion-content">
+        <p>Pahami sintaks dasar, struktur program, input/output, dan dasar OOP dalam bahasa C++.</p>
+        <iframe src="https://www.youtube.com/embed/vLnPwxZdW4Y" title="C++ Tutorial" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-button">Struktur Data & Algoritma
+      <span class="arrow">&#9654;</span> <!-- panah ▶ -->
+      </button>
+      <div class="accordion-content">
+        <p>Pelajari array, linked list, stack, queue, sorting, searching, dan dasar algoritma pemrograman.</p>
+        <iframe src="https://www.youtube.com/embed/RBSGKlAvoiM" title="Struktur Data" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-button">Jaringan Komputer
+      <span class="arrow">&#9654;</span> <!-- panah ▶ -->
+      </button>
+      <div class="accordion-content">
+        <p>Pengenalan jaringan, topologi, IP address, protokol komunikasi, dan dasar-dasar TCP/IP.</p>
+        <iframe src="https://www.youtube.com/embed/qiQR5rTSshw" title="Jaringan Komputer" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-button">Sistem Operasi
+      <span class="arrow">&#9654;</span> <!-- panah ▶ -->
+      </button>
+      <div class="accordion-content">
+        <p>Bahas konsep proses, memori, file system, multitasking, dan manajemen perangkat.</p>
+        <iframe src="https://www.youtube.com/embed/26QPDBe-NB8" title="Sistem Operasi" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+  <button class="accordion-button">
+    Cyber Security (Keamanan Siber)
+    <span class="arrow">&#9654;</span>
+  </button>
+  <div class="accordion-content">
+    <p>Pahami dasar cybersecurity: ancaman, enkripsi, autentikasi, dan praktik keamanan jaringan.</p>
+    <video controls width="100%">
+  <source src="videos/keamanan-siber.mp4" type="video/mp4">
+  Maaf, browser kamu tidak mendukung pemutaran video.
+</video>
+
+  </div>
+</div>
+
+
+
+
+
+
+    <div class="accordion-item">
+      <button class="accordion-button">Kecerdasan Buatan
+      <span class="arrow">&#9654;</span> <!-- panah ▶ -->
+      </button>
+      <div class="accordion-content">
+        <p>Kenali konsep AI, machine learning, neural network, dan aplikasinya dalam kehidupan nyata.</p>
+        <iframe src="https://www.youtube.com/embed/2ePf9rue1Ao" title="Artificial Intelligence" allowfullscreen></iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    
+
+  <!-- Gelombang separator -->
+<div class="wave-separator">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path d="M0,40 C480,140 960,0 1440,80 L1440,0 L0,0 Z" fill="white"></path>
+  </svg>
+</div>
+
+<section id="blog">
+  <section class="blog-section">
+  <div class="container">
+    <h2 class="section-title">Blog</h2>
+    <p class="section-description">Artikel terpercaya seputar ilmu komputer & pemrograman.</p>
+
+    <!-- Artikel 1 -->
+    <a href="https://www.dicoding.com/blog/tutorial-belajar-python-untuk-calon-machine-learning-developer/" class="blog-card" target="_blank">
+      <span class="tag tutorial">Python</span>
+      <h3 class="blog-title">Tutorial Belajar Python untuk Calon Machine Learning Developer</h3>
+      <p class="blog-description">Panduan menggunakan library seperti NumPy, Pandas, dan Matplotlib untuk ML developer pemula.</p>
+      <div class="author-info">
+        <img src="images/dicoding1.jpg" alt="Dicoding" class="author-img">
+        <div>
+          <p class="author-name">Dicoding</p>
+          <p class="blog-meta">Apr 2024 • ±8 min read</p>
+        </div>
+      </div>
+    </a>
+
+    <!-- Artikel 2 -->
+    <a href="https://www.dicoding.com/blog/menguasai-python-dengan-mudah-tutorial-kode-untuk-pemula-dengan-google-colab/" class="blog-card" target="_blank">
+      <span class="tag teknologi">Google Colab</span>
+      <h3 class="blog-title">Tutorial Kode untuk Pemula dengan Google Colab</h3>
+      <p class="blog-description">Mulai coding langsung di browser dengan Google Colab, sangat cocok untuk pembelajaran Python interaktif.</p>
+      <div class="author-info">
+        <img src="images/dicoding3.jpg" alt="Dicoding" class="author-img">
+        <div>
+          <p class="author-name">Dicoding</p>
+          <p class="blog-meta">Apr 2024 • ±7 min read</p>
+        </div>
+      </div>
+    </a>
+
+    <!-- Artikel 3 -->
+    <a href="https://www.petanikode.com/tutorial/python/" class="blog-card" target="_blank">
+      <span class="tag basisdata">Python Dasar</span>
+      <h3 class="blog-title">Tutorial Dasar Pemrograman Python</h3>
+      <p class="blog-description">Rangkaian tutorial mulai dari sintaks hingga struktur data dasar di Python.</p>
+      <div class="author-info">
+        <img src="images/petanikode4.jpg" alt="Petani Kode" class="author-img">
+        <div>
+          <p class="author-name">Petani Kode</p>
+          <p class="blog-meta">Mei 2017 • – </p>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+</section>
+  <!-- Gelombang separator -->
+<div class="wave-separator">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path d="M0,40 C480,140 960,0 1440,80 L1440,0 L0,0 Z" fill="white"></path>
+  </svg>
+</div>
+
+  <section id="kontak">
+    <h2><center>Kontak</center></h2>
+    <section id="kontak" class="kontak">
+  <h3>Hubungi Saya</h3>
+  <p>
+    Punya pertanyaan atau masukan?<br>
+    Silakan hubungi saya melalui formulir ini atau melalui kontak lain di bawah.
+  </p>
+
+  <div class="kontak-info">
+    <p>📧 <a href="mailto:qmrytnnsaa@gmail.com">qmrytnnsaa@gmail.com</a><br>
+    <span class="sub">Merespon dalam 1 hari kerja</span></p>
+<p>📍Blang Krueng, Baitussalam, Aceh Besar, Provinsi Nanggroe Aceh Darussalam
+    </p>
+
+    <p>📞 +62 83131164135<br>
+    Senin–Jumat, 09:00–17:00 WIB</p>
+  </div>
+
+  <h4>Ikuti Saya</h4>
+  <div class="sosmed" 
+  style="font-size: 28px; margin-top: 15px;">
+  <a href="https://facebook.com/niisaa.niisaa.92560" target="_blank" style="margin-right: 15px; color: #1877f2;">
+    <i class='bx bxl-facebook'></i>
+  </a>
+  <a href="https://t.me/qmrytnnsaa" target="_blank" style="margin-right: 15px; color: #0088cc;">
+    <i class='bx bxl-telegram'></i>
+  </a>
+  <a href="https://instagram.com/qmrytnnsaa" target="_blank" style="margin-right: 15px; color: #e1306c;">
+    <i class='bx bxl-instagram'></i>
+  </a>
+  <a href="https://wa.me/6283131164135" target="_blank" style="margin-right: 15px; color: #25d366;">
+    <i class='bx bxl-whatsapp'></i>
+  </a>
+  <a href="https://youtube.com/@namamu" target="_blank" style="color: #ff0000;">
+    <i class='bx bxl-youtube'></i>
+  </a>
+</div>
+    <form>
+      <label>Nama:</label>
+      <input type="text" required>
+      <label>Email:</label>
+      <input type="email" required>
+      <label>Pesan:</label>
+      <textarea required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+    <p>Email: pendidikanilmukomputer@gmail.com</p>
+    <p>Instagram: @pendidikan.komputer</p>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2025 Qomariyatun Nisa Khoiriyah. Pendidikan Ilmu Komputer</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    function logout() {
+      localStorage.removeItem("loggedIn");
+      alert("Anda telah logout.");
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>
