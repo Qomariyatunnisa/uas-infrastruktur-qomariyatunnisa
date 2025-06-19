@@ -106,11 +106,7 @@ function toggleMenu() {
     }
   }
 
-  function logout() {
-    alert("Anda telah logout");
-    // tambahkan fungsi logout sesuai kebutuhan
-  }
-
+  
 function toggleMenu() {
     const navRight = document.getElementById('navRight');
     const hamburger = document.getElementById('hamburger');
