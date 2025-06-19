@@ -505,9 +505,11 @@
   <footer>
     <p>&copy; 2025 Qomariyatun Nisa Khoiriyah. Pendidikan Ilmu Komputer</p>
   </footer></div>
-   <script>
+   <button onclick="logout()">Logout</button>
+
+<script>
   function logout() {
-    localStorage.removeItem("loggedIn");
+    sessionStorage.clear(); 
     window.location.href = "index.html"; 
   }
 </script>
