@@ -105,12 +105,6 @@ function toggleMenu() {
       closeBtn.style.display = "none";
     }
   }
- function logout() {
-  alert("Anda telah logout");
-  sessionStorage.clear();
-  localStorage.clear();
-  window.location.href = "index.html";
-}
 function toggleMenu() {
     const navRight = document.getElementById('navRight');
     const hamburger = document.getElementById('hamburger');
@@ -130,4 +124,10 @@ function toggleMenu() {
   } else {
     hamburger.innerHTML = "☰";
   }
+}
+function logout() {
+  alert("Anda telah logout");
+  sessionStorage.clear();
+  localStorage.clear();
+  window.location.href = "index.html";
 }
