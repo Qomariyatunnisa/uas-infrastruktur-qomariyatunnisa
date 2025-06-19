@@ -106,9 +106,9 @@ function toggleMenu() {
     }
   }
 
-  document.querySelector('.logout-btn').addEventListener('click', function (e) {
-  e.preventDefault();
-  sessionStorage.clear();
+ function logout() {
+    alert("Anda telah logout");
+    // tambahkan fungsi logout sesuai kebutuhan
   window.location.href = 'index.html';
 });
 function toggleMenu() {
