@@ -105,12 +105,12 @@ function toggleMenu() {
       closeBtn.style.display = "none";
     }
   }
-
  function logout() {
-    alert("Anda telah logout");
-    // tambahkan fungsi logout sesuai kebutuhan
-  window.location.href = 'index.html';
-});
+  alert("Anda telah logout");
+  sessionStorage.clear();
+  localStorage.clear();
+  window.location.href = "index.html";
+}
 function toggleMenu() {
     const navRight = document.getElementById('navRight');
     const hamburger = document.getElementById('hamburger');
