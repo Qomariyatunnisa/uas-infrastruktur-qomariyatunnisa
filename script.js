@@ -106,10 +106,11 @@ function toggleMenu() {
     }
   }
 
-  function logout() {
-    sessionStorage.clear(); 
-    window.location.href = "index.html"; 
-  }
+  document.querySelector('.logout-btn').addEventListener('click', function (e) {
+  e.preventDefault();
+  sessionStorage.clear();
+  window.location.href = 'index.html';
+});
 function toggleMenu() {
     const navRight = document.getElementById('navRight');
     const hamburger = document.getElementById('hamburger');
